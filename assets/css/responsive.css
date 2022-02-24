@@ -1,0 +1,27 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    .navigation-manual {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .logo {
+        margin: 0;
+    }
+    .header-nav {
+        display: none;
+    }
+    .header__tab-light {
+        display: none;
+    }
+    .content__news {
+        justify-content: center;
+    }
+}

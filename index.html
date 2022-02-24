@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web anime</title>
+    
+    <!-- <link rel="icon" href="https://cdn.pixabay.com/photo/2019/08/11/18/27/icon-4399630_1280.png" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assest/fonts/themify-icons-font/themify-icons.css">
+    <link rel="stylesheet" href="/assest/fonts/themify-icons-font/themify-icons.css">
+
+</head>
+<body>
+    <div class="progress"></div>
+    <div class="app">
+        <div class="header">
+            <div class="header__nav-logo">
+                <h3 class="logo">Anime TV</h3>
+                <ul class="header-nav">
+                    <li class="header-nav__item"><a class="header-nav__item-link">Anime</a>
+                        <ul class="header-subnav">
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Search 1</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Search 2</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Tour Package </a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Desination</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Typology</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-nav__item"><a class="header-nav__item-link">Video</a>
+                        <ul class="header-subnav">
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Search 1</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Search 2</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Tour Package </a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Desination</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Typology</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-nav__item"><a class="header-nav__item-link">Tin tức</a>
+                        <ul class="header-subnav">
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Search 1</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Search 2</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Tour Package </a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Desination</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Typology</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-nav__item"><a class="header-nav__item-link">truyện</a>
+                        <ul class="header-subnav">
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Search 1</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Search 2</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Tour Package </a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Desination</a></li>
+                            <li class="header-subnav__item"><a class="header-subnav__item-link">Typology</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="todo">
+                <form class="header__search" autocomplete="off"> 
+                    <div class="header__search-input-wrap">
+                        <input type="text" name="todo" class="header__search-input" placeholder="Tìm tên phim">
+                    </div> 
+                    <button class="header__search-btn" type="submit">
+                        <i class="ti-search"></i>
+                    </button>
+    
+                </form>
+                <div class="todo-list">
+                    <!-- <div class="todo-item">
+                        <span class="todo-text">Leaning cc</span>
+                        <i class="fa-solid fa-trash-can todo-remove"></i>
+                    </div> -->
+                </div>
+
+            </div>
+
+            
+            <div for="nav-user-input" class="header__tab">
+                <div class="header__tab-light">
+                    <i class="ti-light-bulb"></i>
+                </div>
+                <label for="nav-user-input" class="header__tab-user">
+                    <i class="ti-user"></i>
+                </label>
+                
+                <input type="checkbox" hidden class="nav__input" id="nav-user-input">
+                <label for="nav-user-input" class="nav__overlay"></label>
+
+                <nav class="nav__user">
+                    <label for="nav-user-input" class="nav__user-close">
+                        <i class="ti-close"></i>
+                    </label>
+                    <span class="nav__user-title">Chào mừng bạn quay trở lại!</span>
+                    <div class="nav_login">
+                        <span class="nav__user-name">Đăng nhập:</span>
+                        <input class="nav__user-input" type="email" name="" id="">
+                        <span class="nav__user-pass">Nhập mật khẩu:</span>
+                        <input class="nav__user-input" type="password" name="" id="">
+                        <div class="nav__login-btn">
+                            <span class="nav__login-btn-in">Đăng nhập</span>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="slider  grid wide">
+            <div class="slides ">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slider__image first">
+                    <img src="./assets/img/1.jpg" alt="">
+                </div>
+                <div class="slider__image">
+                    <img src="./assets/img/2.jpg" alt="">
+                </div>
+                <div class="slider__image">
+                    <img src="./assets/img/3.jpg" alt="">
+                </div>
+                <div class="slider__image">
+                    <img src="./assets/img/4.jpg" alt="">
+                </div>
+    
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!-- navigation-auto start -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="grid wide">
+                <div class="content__heading">
+                    <h1>Anime mới cập nhật:</h1>
+                </div>
+                <div class="row sm-gutter">
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content__heading">
+                    <h1>Anime hay trong tuần:</h1>
+                </div>
+                <div class="row sm-gutter">
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content__heading">
+                    <h1>Anime tập mới:</h1>
+                </div>
+                <div class="row sm-gutter">
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="content__heading">
+                    <h1>Truyện tranh:</h1>
+                </div>
+                <div class="row sm-gutter">
+                    <div class="col l-2 m-4 c-6">
+                        <a class="content__chap" href="#">
+                            <div class="content__chap-image"> <img src="./assets/img/chap1.jpg" alt="">
+                                <h4 class="content__chap-name">Vanitas no Carte</h4>
+                                <span class="content__chap-des2" >chap 389</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-6">
+                        <a class="content__chap" href="#">
+                            <div class="content__chap-image"> <img src="./assets/img/chap2.jpg" alt="">
+                                <h4 class="content__chap-name">Vanitas no Carte</h4>
+                                <span class="content__chap-des2" >chap 389</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-6">
+                        <a class="content__chap" href="#">
+                            <div class="content__chap-image"> <img src="./assets/img/chap3.jpg" alt="">
+                                <h4 class="content__chap-name">Vanitas no Carte</h4>
+                                <span class="content__chap-des2" >chap 389</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-6">
+                        <a class="content__chap" href="#">
+                            <div class="content__chap-image"> <img src="./assets/img/chap4.jpg" alt="">
+                                <h4 class="content__chap-name">Vanitas no Carte</h4>
+                                <span class="content__chap-des2" >chap 389</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col l-2 m-4 c-6">
+                        <a class="content__chap" href="#">
+                            <div class="content__chap-image"> <img src="./assets/img/chap5.jpg" alt="">
+                                <h4 class="content__chap-name">Vanitas no Carte</h4>
+                                <span class="content__chap-des2" >chap 389</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-6">
+                        <a class="content__chap" href="#">
+                            <div class="content__chap-image"> <img src="./assets/img/chap6.jpg" alt="">
+                                <h4 class="content__chap-name">Vanitas no Carte</h4>
+                                <span class="content__chap-des2" >chap 389</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content__heading">
+                    <h1>Tin tức anime:</h1>
+                </div>
+                <div class="row sm-gutter">
+                    <div class="col l-3 m-6 c-12">
+                        <a class="content__news" href="#">
+                            <div class="content__news-image"> <img src="./assets/img/tin1.jpg" alt="">
+                            </div>
+                            <h4 class="content__news-name">Bày tỏ tình yêu với One Piece trên sóng truyền hình, thanh niên Ấn Độ được phần quà bất ngờ từ chính tác giả</h4>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="content__news" href="#">
+                            <div class="content__news-image"> <img src="./assets/img/tin2.jpg" alt="">
+                            </div>
+                            <h4 class="content__news-name">Bày tỏ tình yêu với One Piece trên sóng truyền hình, thanh niên Ấn Độ được phần quà bất ngờ từ chính tác giả</h4>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="content__news" href="#">
+                            <div class="content__news-image"> <img src="./assets/img/tin3.jpg" alt="">
+                            </div>
+                            <h4 class="content__news-name">Bày tỏ tình yêu với One Piece trên sóng truyền hình, thanh niên Ấn Độ được phần quà bất ngờ từ chính tác giả</h4>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="content__news" href="#">
+                            <div class="content__news-image"> <img src="./assets/img/tin4.jpg" alt="">
+                            </div>
+                            <h4 class="content__news-name">Bày tỏ tình yêu với One Piece trên sóng truyền hình, thanh niên Ấn Độ được phần quà bất ngờ từ chính tác giả</h4>
+                        </a>
+                    </div>
+
+                    <div class="col l-3 m-6 c-12">
+                        <a class="content__news" href="#">
+                            <div class="content__news-image"> <img src="./assets/img/tin1.jpg" alt="">
+                            </div>
+                            <h4 class="content__news-name">Bày tỏ tình yêu với One Piece trên sóng truyền hình, thanh niên Ấn Độ được phần quà bất ngờ từ chính tác giả</h4>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="content__news" href="#">
+                            <div class="content__news-image"> <img src="./assets/img/tin2.jpg" alt="">
+                            </div>
+                            <h4 class="content__news-name">Bày tỏ tình yêu với One Piece trên sóng truyền hình, thanh niên Ấn Độ được phần quà bất ngờ từ chính tác giả</h4>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="content__news" href="#">
+                            <div class="content__news-image"> <img src="./assets/img/tin3.jpg" alt="">
+                            </div>
+                            <h4 class="content__news-name">Bày tỏ tình yêu với One Piece trên sóng truyền hình, thanh niên Ấn Độ được phần quà bất ngờ từ chính tác giả</h4>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <a class="content__news" href="#">
+                            <div class="content__news-image"> <img src="./assets/img/tin4.jpg" alt="">
+                            </div>
+                            <h4 class="content__news-name">Bày tỏ tình yêu với One Piece trên sóng truyền hình, thanh niên Ấn Độ được phần quà bất ngờ từ chính tác giả</h4>
+                    </div>
+                </div>
+
+                <div class="content__heading">
+                    <h1>Tất cả anime:</h1>
+                </div>
+                <div class="row sm-gutter">
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime1.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime2.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime3.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai–</span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <a class="content__video" href="#">
+                            <div class="content__video-image"> <img src="./assets/img/anime4.jpg" alt="">
+                                <h4 class="content__video-name">Vanitas no Carte</h4>
+                                <span class="content__video-des">Tập 14 - Château de sorciére –Nữ Phù Thủy và Chàng Trai– </span>
+                                <span class="content__video-des2" >1.765 lượt xem</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="content__more">
+                    <span class="content__more-btn">Xem thêm</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+
+    <script src="./assets/java/java.js" type="text/javascript">
+        
+    </script>
+</body>
+</html>
